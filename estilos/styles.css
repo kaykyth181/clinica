@@ -1,0 +1,37 @@
+
+.corpo{
+   display: block;
+}
+
+#navegacao{
+    position: fixed; /* Ou use "absolute", dependendo da sua necessidade */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+#logo img{
+    width: 150px;
+}
+
+#sobre, #convenio, #agendamento{
+    margin: 300px;
+}
+
+#carouselExampleIndicators{
+    width: 250px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+    
+}
+
+#convenio{
+    align-items: center;
+    
+}
