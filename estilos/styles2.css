@@ -1,16 +1,44 @@
-body {
+
+
+body { 
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
     padding: 0;
 }
+
+h2,h1{
+    font-family: "Winky Rough", sans-serif;
+}
+
+
 header {
     background-color: #00b7ff;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding-bottom: 20px;
 }
+
+#logo img {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    width: 150px;
+    transition: transform 0.3s ease;
+
+
+}
+
+
+
+
+#logo img:hover {
+    transform: scale(1.1);
+    /* Efeito de zoom ao passar o mouse */
+    cursor: pointer;
+}
+
 main {
     padding: 20px;
     max-width: 800px;
@@ -19,15 +47,22 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 h2 {
     text-align: center;
     color: rgb(1, 175, 255);
 }
+
 label {
     display: block;
     margin: 10px 0 5px;
 }
-input[type="text"], input[type="email"], input[type="number"], textarea, select {
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
     width: 100%;
     padding: 8px;
     margin: 5px 0 15px;
@@ -35,8 +70,9 @@ input[type="text"], input[type="email"], input[type="number"], textarea, select 
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 button {
-    background-color: #4CAF50;
+    background-color: #00b7ff;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -45,18 +81,21 @@ button {
     width: 48%;
     margin: 5px 1%;
 }
+
 button:hover {
     background-color: #36c060;
 }
+
 .cancel-btn {
     background-color: #f44336;
 }
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    
     width: 100%;
     bottom: 0;
 }
