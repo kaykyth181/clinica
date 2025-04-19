@@ -43,6 +43,10 @@ h2 {
 .dropdown-item i {
   padding-right: 10px;
 }
+#navbarNav .navbar-nav .nav-item  .dropdown-menu{
+  background: #00b7ff;
+  border: #00b7ff;
+}
 
 
 
@@ -173,16 +177,18 @@ footer {
 
 /* Estilo para dispositivos com largura máxima de 768px (celular) */
 @media (max-width: 768px) {
-  body {
+  .corpo {
     margin: 0;
     padding: 0;
+    
   }
 
   #navegacao {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    padding: 15px;
+    padding: 0;
+   
   }
 
   #logo img {
@@ -196,6 +202,9 @@ footer {
   .corpo {
     margin-top: 100px;
     
+  }
+  .corpo h2{
+    font-size: 50px;
   }
 
   #sobre, #convenio, #agendamento {
