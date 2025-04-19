@@ -1,138 +1,163 @@
-body { 
+body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
   color: #333;
-  
+
 }
 
-h2{
+h2 {
   font-family: "Winky Rough", sans-serif;
 
 }
 
 
-.corpo{
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    
-    margin-top: 70px; 
+.corpo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 150px;
+
 }
 
-#navegacao{
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #00b7ff;
-    color: black;
-    padding: 10px 0;
-    z-index: 1000;
-    position: fixed;
-    
-    
- 
-  
+
+
+#navegacao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #00b7ff;
+  color: black;
+  padding: 10px 0;
+  z-index: 1000;
+  position: fixed;
+
+}
+
+#navegacao h2{
+  font-size: 30px;
+}
+
+.dropdown-item i {
+  padding-right: 10px;
 }
 
 
 
 #navegacao .nav-link:hover {
-  color: lightblue; 
+  color: rgb(18, 99, 22);
+
+}
+.nav-link.active {
   
-}
-#logo img{
-    width: 150px;
-    
+  border-radius: 5px; /* Deixa o fundo arredondado para ficar mais elegante */
+  padding: 5px 10px; /* Espaçamento interno */
 }
 
+#logo img {
+  width: 150px;
 
-
-#sobre, #convenio, #agendamento{
-    margin: 100px;
 }
 
-#carouselExampleIndicators{
-    width: 250px;
-    display: flex;
+
+#sobre,
+#convenio,
+#agendamento {
+  margin: 50px;
+}
+
+#carouselExampleIndicators {
+
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   width: 400px;
-  
-  
-    
+
 }
 
 #convenio {
-  background-color: rgb(31, 140, 204); 
-  color: white; 
-  padding: 20px; 
-  
+  background-color: rgb(31, 140, 204);
+  color: white;
+  padding: 20px;
   width: 100%;
 }
 
 
+
+
+#sobre,
+#convenio,
+#agendamento {
+  text-align: center;
+}
+
+#agendamento {
+  border: solid rgb(31, 140, 204) 5px;
+  padding: 100px;
+  border-radius: 100%;
+}
+
+#agendamento:hover {
+  border: solid rgb(50, 190, 255) 5px;
+
+}
+
+
+
+#sobre {
+  margin-top: 70px;
+
+
+}
+
+.btn {
+  background: linear-gradient(145deg, #00b7ff, #0dffdf);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #333;
+  padding: 10px 20px;
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+  transform: translateY(2px);
+}
+
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 4000; 
   
   
-  #sobre, #convenio, #agendamento {
-    text-align: center;
-  }
+}
 
-  #agendamento{
-    border: solid rgb(31, 140, 204) 5px;
-    padding: 100px;
-    border-radius: 100% ;
-  }
-  #agendamento:hover{
-    border: solid rgb(50, 190, 255) 5px;
-    padding: 110px;
-  }
+.whatsapp img {
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.2s ease; 
+}
 
-  
+.whatsapp img:hover {
+  transform: scale(1.1); 
+}
 
 
-.corpo {
-    margin-top: 150px; 
-  }
-  
- 
-  #navegacao {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  #sobre {
-    margin-top: 70px; 
-    
-    
-  }
-  .btn {
-    background: linear-gradient(145deg, #00b7ff, #0dffdf); 
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
-    color: #333; 
-    padding: 10px 20px; 
-    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff; 
-    cursor: pointer; 
-    transition: all 0.3s ease; 
-  }
-  
-  .btn:hover {
-    box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
-    transform: translateY(2px);
-  }
-
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    
-    width: 100%;
-    bottom: 0;
-    z-index: 3000;
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  bottom: 0;
+  z-index: 3000;
 }
