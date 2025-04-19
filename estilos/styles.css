@@ -161,3 +161,61 @@ footer {
   bottom: 0;
   z-index: 3000;
 }
+
+
+/* Estilo para dispositivos com largura máxima de 768px (celular) */
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #navegacao {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  #logo img {
+    width: 100px;
+  }
+
+  .nav-link h2 {
+    font-size: 20px;
+  }
+
+  .corpo {
+    margin-top: 100px;
+    padding: 10px;
+  }
+
+  #sobre, #convenio, #agendamento {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  #carouselExampleIndicators {
+    width: 100%;
+  }
+
+  #agendamento {
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .whatsapp img {
+    width: 50px;
+    height: 50px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
