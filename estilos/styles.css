@@ -1,9 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
 
-}
 
 h2 {
   font-family: "Winky Rough", sans-serif;
@@ -12,13 +7,18 @@ h2 {
 
 
 .corpo {
+  font-family: Arial, sans-serif;;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   margin-top: 150px;
+  font-size: 20px;
+  background-color: #f4f4f9;
 
+}
+.corpo h2{
+  font-size: 100px;
 }
 
 
@@ -33,7 +33,7 @@ h2 {
   padding: 10px 0;
   z-index: 1000;
   position: fixed;
-
+  
 }
 
 #navegacao h2{
@@ -74,15 +74,17 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 400px;
 
 }
+
+
 
 #convenio {
   background-color: rgb(31, 140, 204);
   color: white;
-  padding: 20px;
+  padding: 0px 100px 100px;
   width: 100%;
+
 }
 
 
@@ -94,22 +96,28 @@ h2 {
   text-align: center;
 }
 
-#agendamento {
-  border: solid rgb(31, 140, 204) 5px;
-  padding: 100px;
-  border-radius: 100%;
-}
 
-#agendamento:hover {
-  border: solid rgb(50, 190, 255) 5px;
-
-}
 
 
 
 #sobre {
   margin-top: 70px;
 
+
+}
+
+
+#agendamento {
+  border: solid rgb(31, 140, 204) 5px;
+  padding: 100px;
+  border-radius: 100%;
+}
+#agendamento h2{
+  font-size: 50px;
+}
+
+#agendamento:hover {
+  border: solid rgb(50, 190, 255) 5px;
 
 }
 
@@ -125,7 +133,7 @@ h2 {
 }
 
 .btn:hover {
-  box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+  box-shadow: inset 4px 4px 8px #3bf32a, inset -4px -4px 8px #1eaa02;
   transform: translateY(2px);
 }
 
@@ -187,7 +195,7 @@ footer {
 
   .corpo {
     margin-top: 100px;
-    padding: 10px;
+    
   }
 
   #sobre, #convenio, #agendamento {
@@ -209,7 +217,7 @@ footer {
     font-size: 14px;
     padding: 8px 15px;
   }
-
+ 
   .whatsapp img {
     width: 50px;
     height: 50px;
@@ -217,5 +225,6 @@ footer {
 
   footer {
     font-size: 12px;
+    width: 100%;
   }
 }
