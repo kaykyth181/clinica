@@ -1,7 +1,7 @@
 
 
 body { 
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;;
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
@@ -14,26 +14,32 @@ h2,h1{
 
 
 header {
+    position: relative;
     background-color: #00b7ff;
     color: white;
-    text-align: center;
-    padding-bottom: 20px;
-    
-    
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 10px 20px; 
 }
 
 #logo img {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 10px;
     width: 150px;
     transition: transform 0.3s ease;
-
-
 }
 
-
-
+.htexto h1, .htexto p {
+    text-align: right; 
+    
+    
+}
+span{
+    color: #f44336;
+}
+header p {
+    position: relative;
+    
+}
 
 #logo img:hover {
     transform: scale(1.1);
@@ -97,7 +103,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    
+    font-family: Arial, sans-serif;
     width: 100%;
     bottom: 0;
 }
+
