@@ -1,6 +1,15 @@
+:root {
+  --cor-primaria: #00b7ff;
+  --cor-secundaria: rgb(31, 140, 204);
+  --cor-terciaria: #015374;
+  --cor-destaque:rgb(18, 99, 22);
+  --cor-fonte: #333333;
+  --cor-fundo: #f4f4f9;
+}
 
 
-h2, #navbarNav .navbar-nav .nav-item  .dropdown-menu {
+h2,
+#navbarNav .navbar-nav .nav-item .dropdown-menu {
   font-family: "Winky Rough", sans-serif;
 
 }
@@ -14,10 +23,11 @@ h2, #navbarNav .navbar-nav .nav-item  .dropdown-menu {
   align-items: center;
   margin-top: 100px;
   font-size: 20px;
-  background-color: #f4f4f9;
+  background-color: var(--cor-fundo);
 
 }
-.corpo h2{
+
+.corpo h2 {
   font-size: 100px;
 }
 
@@ -28,33 +38,35 @@ h2, #navbarNav .navbar-nav .nav-item  .dropdown-menu {
   top: 0;
   left: 0;
   width: 100%;
-  background: #00b7ff;
-  color: black;
+  background: var(--cor-primaria);
+  color: var(--cor-fonte);
   padding: 10px 0;
   z-index: 1000;
   position: fixed;
-  
-  
+
+
 }
 
-#navegacao h2{
+#navegacao h2 {
   font-size: 30px;
 }
 
 .dropdown-item i {
   padding-right: 10px;
 }
-#navbarNav .navbar-nav .nav-item  .dropdown-menu{
-  background: #00b7ff;
-  border: #00b7ff;
+
+#navbarNav .navbar-nav .nav-item .dropdown-menu {
+  background: var(--cor-primaria);
+  border: var(--cor-primaria);
 }
 
 
 
 #navegacao .nav-link:hover {
-  color: rgb(18, 99, 22);
+  color: var(--cor-destaque);
 
 }
+
 .nav-link.active {
 
   padding: 5px 10px;
@@ -85,8 +97,8 @@ h2, #navbarNav .navbar-nav .nav-item  .dropdown-menu {
 
 
 #convenio {
-  background-color: rgb(31, 140, 204);
-  color: white;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo);
   padding: 0px 100px 100px;
   width: 100%;
 
@@ -101,10 +113,6 @@ h2, #navbarNav .navbar-nav .nav-item  .dropdown-menu {
   text-align: center;
 }
 
-
-
-
-
 #sobre {
   margin-top: 50px;
 
@@ -113,15 +121,16 @@ h2, #navbarNav .navbar-nav .nav-item  .dropdown-menu {
 
 
 #agendamento {
-  
+
   padding: 150px;
   padding-top: 200px;
-  background: #015374;
+  background: var(--cor-terciaria);
   margin: -100px 0 -50px 0;
   width: 100%;
-  
+
 }
-#agendamento h2{
+
+#agendamento h2 {
   font-size: 50px;
   color: white;
 }
@@ -147,33 +156,35 @@ h2, #navbarNav .navbar-nav .nav-item  .dropdown-menu {
 
 .whatsapp {
   position: fixed;
-  bottom: 20px; 
-  right: 20px; 
-  z-index: 4000; 
+  bottom: 20px;
+  right: 20px;
+  z-index: 4000;
   display: block;
-  
-  
+
+
+
 }
-.whatsapp i{
+
+.whatsapp i {
   position: absolute;
   z-index: 100;
   padding-bottom: 40px;
-  margin: -5px 0px 0 40px;
+  margin: -5px 0px 0 60px;
   color: rgb(5, 151, 49);
-  font-size: 15px;
-  
+  font-size: 20px;
+
 }
 
 .whatsapp img {
-  width: 60px; 
-  height: 60px;
-  border-radius: 50%; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  transition: transform 0.2s ease; 
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
 }
 
 .whatsapp:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 
@@ -196,7 +207,7 @@ footer {
   .corpo {
     margin: 0;
     padding: 0;
-    
+
   }
 
   #navegacao {
@@ -204,7 +215,7 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 0;
-   
+
   }
 
   #logo img {
@@ -217,23 +228,30 @@ footer {
 
   .corpo {
     margin-top: 100px;
-    
+    width: 100%;
+
   }
-  .corpo h2{
+
+  .corpo h2 {
     font-size: 50px;
   }
 
-  #sobre, #convenio, #agendamento {
+  #sobre,
+  #convenio,
+  #agendamento {
     margin: 20px;
     padding: 10px;
   }
 
   #carouselExampleIndicators {
     width: 100%;
-    border: solid #015374;
+    border: solid --cor-terciaria;
+  }
+  .carousel-inner .carousel-item a{
+    width: 100%;
   }
 
-  #convenio{
+  #convenio {
     padding-bottom: 100px;
   }
 
@@ -242,23 +260,33 @@ footer {
     border: none;
     padding-top: 100px;
     padding-bottom: 100px;
-    
+
     margin-top: -20px;
     margin-bottom: -40px;
   }
+ 
 
   .btn {
     font-size: 14px;
     padding: 8px 15px;
   }
- 
+
   .whatsapp img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .whatsapp i {
+    font-size: 17px;
+    margin: -5px 0px 0 45px;
+  }
+
+  .whatsapp:hover {
+    transform: scale(1.1);
   }
 
   footer {
     font-size: 16px;
-    
+
   }
 }

@@ -1,9 +1,17 @@
-
+:root {
+    --cor-primaria: #00b7ff;
+    --cor-secundaria: rgb(31, 140, 204);
+    --cor-terciaria: #015374;
+    --cor-destaque:rgb(18, 99, 22);
+    --cor-fonte: #333333;
+    --cor-fundo: #f4f4f9;
+  }
+  
 
 body { 
-    font-family: Arial, sans-serif;;
-    background-color: #f4f4f9;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
     margin: 0;
     padding: 0;
 }
@@ -15,8 +23,8 @@ h2,h1{
 
 header {
     position: relative;
-    background-color: #00b7ff;
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
     display: flex; 
     align-items: center; 
     justify-content: space-between;
@@ -26,6 +34,10 @@ header {
 #logo img {
     width: 150px;
     transition: transform 0.3s ease;
+}
+#logo img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .htexto h1, .htexto p {
@@ -41,16 +53,13 @@ header p {
     
 }
 
-#logo img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
+
 
 main {
     padding: 20px;
     max-width: 800px;
     margin: auto;
-    background-color: white;
+    background-color: var(--cor-fundo);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -79,8 +88,8 @@ select {
 }
 
 button {
-    background-color: #00b7ff;
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
@@ -90,7 +99,7 @@ button {
 }
 
 button:hover {
-    background-color: #36c060;
+    background-color: var(--cor-destaque);
 }
 
 .cancel-btn {
