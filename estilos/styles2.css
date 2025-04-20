@@ -43,7 +43,6 @@ header p {
 
 #logo img:hover {
     transform: scale(1.1);
-    /* Efeito de zoom ao passar o mouse */
     cursor: pointer;
 }
 
