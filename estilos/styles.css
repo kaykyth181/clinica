@@ -1,6 +1,6 @@
 
 
-h2 {
+h2, #navbarNav .navbar-nav .nav-item  .dropdown-menu {
   font-family: "Winky Rough", sans-serif;
 
 }
@@ -56,8 +56,7 @@ h2 {
 
 }
 .nav-link.active {
-  
-   
+
   padding: 5px 10px;
 }
 
