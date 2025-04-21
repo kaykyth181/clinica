@@ -158,6 +158,10 @@ h2,
   
 
 }
+
+.card:hover{
+  transform: translateY(2px);
+}
 #agendamento .card{
   display:inline-block
 }
@@ -181,6 +185,11 @@ h2,
   transition: all 0.3s ease;
   animation: pulsar 1.5s infinite;
   margin-top: 50px;
+  
+  
+}
+#btn{
+  font-size: 30px;
 }
 
 @keyframes pulsar {
@@ -336,8 +345,11 @@ footer {
 
 
   .btn {
-    font-size: 14px;
+    
     padding: 8px 15px;
+  }
+  #btn{
+    font-size: 20px;
   }
 
   .whatsapp img {
