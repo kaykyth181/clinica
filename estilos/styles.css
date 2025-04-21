@@ -2,7 +2,7 @@
   --cor-primaria: #00b7ff;
   --cor-secundaria: rgb(31, 140, 204);
   --cor-terciaria: #015374;
-  --cor-destaque:rgb(18, 99, 22);
+  --cor-destaque: rgb(18, 99, 22);
   --cor-fonte: #333333;
   --cor-fundo: #f4f4f9;
 }
@@ -24,7 +24,7 @@ h2,
   margin-top: 100px;
   font-size: 20px;
   background-color: var(--cor-fundo);
- /*  background: linear-gradient(110deg, var(--cor-fundo), var(--cor-primaria)); */
+  /*  background: linear-gradient(110deg, var(--cor-fundo), var(--cor-primaria)); */
 
 }
 
@@ -93,13 +93,6 @@ h2,
 
 
 
-#convenio {
-  background-color: var(--cor-secundaria);
-  color: var(--cor-fundo);
-  padding: 0px 100px 100px;
-  width: 100%;
-
-}
 
 
 
@@ -111,24 +104,28 @@ h2,
   margin: 45px;
 }
 
-#titulo{
+#titulo {
   color: var(--cor-fonte);
- 
-    background: linear-gradient(to right, var(--cor-primaria), white, red); /
-    
+
+  background: linear-gradient(to right, var(--cor-primaria), white, red);
+
   border-radius: 100%;
-    
-    margin-top: 100px;
+
+  margin-top: 100px;
+  
+  
 
 }
 
-#titulo h1{
-  
-    font-family: "Winky Rough", sans-serif;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+#titulo h1 {
+
+  font-family: "Winky Rough", sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   font-size: 100px;
-  
-    
+
+}
+#titulo img{
+  margin-left: 190px;
 }
 
 
@@ -141,6 +138,15 @@ h2,
 
 }
 
+#convenio {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo);
+  padding: 0px 100px 100px;
+  width: 100%;
+
+}
+
+
 
 #agendamento {
 
@@ -149,12 +155,17 @@ h2,
   background: var(--cor-terciaria);
   margin: -100px 0 -50px 0;
   width: 100%;
+  
 
+}
+#agendamento .card{
+  display:inline-block
 }
 
 #agendamento h2 {
   font-size: 50px;
   color: white;
+  
 }
 
 
@@ -168,15 +179,19 @@ h2,
   box-shadow: 4px 4px 8px #0e0d0d, -4px -4px 8px #000000;
   cursor: pointer;
   transition: all 0.3s ease;
-  animation: pulsar 1.5s infinite; 
+  animation: pulsar 1.5s infinite;
+  margin-top: 50px;
 }
 
 @keyframes pulsar {
-  0%, 100% {
-    transform: scale(1); 
+
+  0%,
+  100% {
+    transform: scale(1);
   }
+
   50% {
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
 }
 
@@ -267,6 +282,7 @@ footer {
   .corpo h2 {
     font-size: 50px;
   }
+
   #titulo,
   #sobre,
   #convenio,
@@ -274,14 +290,18 @@ footer {
     margin: 20px;
     padding: 10px;
   }
-  #titulo{
+
+  #titulo {
     width: 300px;
-    
+    border-radius: 100%;
+
   }
-  #titulo h1{
+
+  #titulo h1 {
     font-size: 50px;
   }
-  #titulo img{
+
+  #titulo img {
     width: 345px;
   }
 
@@ -289,7 +309,8 @@ footer {
     width: 100%;
     border: solid --cor-terciaria;
   }
-  .carousel-inner .carousel-item a{
+
+  .carousel-inner .carousel-item a {
     width: 100%;
   }
 
@@ -306,7 +327,7 @@ footer {
     margin-top: -20px;
     margin-bottom: -40px;
   }
- 
+
 
   .btn {
     font-size: 14px;
@@ -335,20 +356,24 @@ footer {
 
 @media (min-width: 769px) {
   body {
-      background-color: #f0f8ff; /* Cor de fundo para telas maiores */
+    background-color: #f0f8ff;
+   
   }
-  
+
   #titulo {
-      text-align: center;
-      font-size: 3rem; /* Ajusta o tamanho da fonte para telas grandes */
+    text-align: center;
+    font-size: 3rem;
+    
   }
 
   #sobre p {
-      font-size: 1.2rem; /* Amplia o tamanho do texto */
-      line-height: 1.8; /* Melhora o espaçamento entre linhas */
+    font-size: 1.2rem;
+    line-height: 1.8;
+   
   }
 
   .navbar-nav h2 {
-      font-size: 1.5rem; /* Ajusta os tamanhos no menu */
+    font-size: 1.5rem;
+    
   }
 }

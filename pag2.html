@@ -19,9 +19,6 @@
         href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
 
-
-    <!--  -->
-
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="estilos/styles2.css">
@@ -36,10 +33,10 @@
         <div id="logo">
             <a href="index.html"><img src="img/logo.png" alt="logo varias cruz"></a>
         </div>
-        <div class="htexto"><h1>Cadastro Paciente Hospital <span>Saúde +</span></h1>
-            <p>Preencha as informações abaixo para cadastrar um novo paciente na rede hospitalar.</p></div>
-
-        
+        <div class="htexto">
+            <h1>Cadastro Paciente Hospital <span>Saúde +</span></h1>
+            <p>Preencha as informações abaixo para cadastrar um novo paciente na rede hospitalar.</p>
+        </div>
     </header>
 
     <main>
@@ -77,6 +74,16 @@
             <label for="observacoes">Observações:</label>
             <textarea id="observacoes" name="observacoes" rows="4"
                 placeholder="Alguma observação sobre o paciente?"></textarea>
+
+            <!-- Serviços -->
+            <label for="servico">Serviço Desejado:</label>
+            <select id="servico" name="servico" required>
+                <option value="consulta-medica">Consulta Médica</option>
+                <option value="exame-laboratorial">Exame Laboratorial</option>
+                <option value="acompanhamento-nutricional">Acompanhamento Nutricional</option>
+                <option value="checkup-preventivo">Check-up Preventivo</option>
+                <option value="outro">Outro</option>
+            </select>
 
             <!-- Botões -->
             <button type="submit">Cadastrar Paciente</button>
