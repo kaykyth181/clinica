@@ -11,6 +11,7 @@
 h2,
 #navbarNav .navbar-nav .nav-item .dropdown-menu {
   font-family: "Winky Rough", sans-serif;
+  
 
 }
 
@@ -26,10 +27,6 @@ h2,
   background-color: var(--cor-fundo);
   /*  background: linear-gradient(110deg, var(--cor-fundo), var(--cor-primaria)); */
 
-}
-
-.corpo h2 {
-  font-size: 100px;
 }
 
 
@@ -103,6 +100,7 @@ h2,
   text-align: center;
   margin: 45px;
 }
+
 
 #titulo {
   color: var(--cor-fonte);
@@ -263,7 +261,7 @@ footer {
   .corpo {
     margin: 0;
     padding: 0;
-
+   
   }
 
   #navegacao {
@@ -290,6 +288,7 @@ footer {
 
   .corpo h2 {
     font-size: 50px;
+    max-width: 100%;
   }
 
   #titulo,
@@ -312,8 +311,8 @@ footer {
   }
 
   #titulo img {
-    width: 345px;
-    margin-left: 50px;
+    width: 200px;
+    margin-left: 20px;
   }
 
   #carouselExampleIndicators {
@@ -340,7 +339,8 @@ footer {
     
   }
   #agendamento .card{
-    margin: 2px
+    margin: 2px;
+    width: 10rem;
   }
 
 
