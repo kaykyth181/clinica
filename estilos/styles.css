@@ -24,6 +24,7 @@ h2,
   margin-top: 100px;
   font-size: 20px;
   background-color: var(--cor-fundo);
+ /*  background: linear-gradient(110deg, var(--cor-fundo), var(--cor-primaria)); */
 
 }
 
@@ -43,7 +44,8 @@ h2,
   padding: 10px 0;
   z-index: 1000;
   position: fixed;
-
+  /* background: linear-gradient(45deg, var(--cor-primaria), var(--cor-terciaria));
+ */
 
 }
 
@@ -78,11 +80,6 @@ h2,
 }
 
 
-#sobre,
-#convenio,
-#agendamento {
-  margin: 50px;
-}
 
 #carouselExampleIndicators {
 
@@ -106,12 +103,37 @@ h2,
 
 
 
-
+#titulo,
 #sobre,
 #convenio,
 #agendamento {
   text-align: center;
+  margin: 45px;
 }
+
+#titulo{
+  color: var(--cor-fonte);
+ 
+    background: linear-gradient(to right, var(--cor-primaria), white, red); /
+    
+  border-radius: 100%;
+    
+    margin-top: 100px;
+
+}
+
+#titulo h1{
+  
+    font-family: "Winky Rough", sans-serif;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+  font-size: 100px;
+  
+    
+}
+
+
+
+
 
 #sobre {
   margin-top: 100px;
@@ -211,6 +233,7 @@ footer {
 
 
 
+
 /* Estilo para dispositivos com largura máxima de 768px (celular) */
 @media (max-width: 768px) {
   .corpo {
@@ -244,12 +267,22 @@ footer {
   .corpo h2 {
     font-size: 50px;
   }
-
+  #titulo,
   #sobre,
   #convenio,
   #agendamento {
     margin: 20px;
     padding: 10px;
+  }
+  #titulo{
+    width: 300px;
+    
+  }
+  #titulo h1{
+    font-size: 50px;
+  }
+  #titulo img{
+    width: 345px;
   }
 
   #carouselExampleIndicators {
@@ -297,5 +330,25 @@ footer {
   footer {
     font-size: 16px;
 
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+      background-color: #f0f8ff; /* Cor de fundo para telas maiores */
+  }
+  
+  #titulo {
+      text-align: center;
+      font-size: 3rem; /* Ajusta o tamanho da fonte para telas grandes */
+  }
+
+  #sobre p {
+      font-size: 1.2rem; /* Amplia o tamanho do texto */
+      line-height: 1.8; /* Melhora o espaçamento entre linhas */
+  }
+
+  .navbar-nav h2 {
+      font-size: 1.5rem; /* Ajusta os tamanhos no menu */
   }
 }
