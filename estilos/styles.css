@@ -294,8 +294,9 @@ footer {
   #titulo {
     width: 300px;
     border-radius: 100%;
-
+    
   }
+  
 
   #titulo h1 {
     font-size: 50px;
@@ -327,6 +328,10 @@ footer {
 
     margin-top: -20px;
     margin-bottom: -40px;
+    
+  }
+  #agendamento .card{
+    margin: 2px
   }
 
 
@@ -366,6 +371,11 @@ footer {
     font-size: 3rem;
     
   }
+  #titulo img {
+    width: 345px;
+    margin-left: 50px;
+  }
+
 
   #sobre p {
     font-size: 1.2rem;
