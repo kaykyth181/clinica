@@ -12,6 +12,7 @@ h2,
 #navbarNav .navbar-nav .nav-item .dropdown-menu {
   font-family: "Winky Rough", sans-serif;
   
+  
 
 }
 
@@ -101,6 +102,12 @@ h2,
   margin: 45px;
 }
 
+#titulo h2,
+#sobre h2,
+#convenio h2,
+#agendamento  h2{
+  font-size: 100px;
+}
 
 #titulo {
   color: var(--cor-fonte);
@@ -123,7 +130,8 @@ h2,
 
 }
 #titulo img{
-  margin-left: 190px;
+  margin-left: 180px;
+  
 }
 
 
@@ -144,7 +152,14 @@ h2,
 
 }
 
-
+#convenio #carouselExampleIndicators {
+  width: 100%;
+ 
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
 
 #agendamento {
 
