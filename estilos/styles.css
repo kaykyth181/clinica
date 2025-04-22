@@ -417,6 +417,13 @@ footer {
     width: 345px;
     margin-left: 50px;
   }
+  #titulo h2,
+  #sobre h2,
+  #convenio h2,
+  #agendamento h2 {
+    font-size: 50px;
+  }
+
 
 
   #sobre p {
