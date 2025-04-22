@@ -11,8 +11,8 @@
 h2,
 #navbarNav .navbar-nav .nav-item .dropdown-menu {
   font-family: "Winky Rough", sans-serif;
-  
-  
+
+
 
 }
 
@@ -105,7 +105,7 @@ h2,
 #titulo h2,
 #sobre h2,
 #convenio h2,
-#agendamento  h2{
+#agendamento h2 {
   font-size: 100px;
 }
 
@@ -117,8 +117,8 @@ h2,
   border-radius: 100%;
 
   margin-top: 100px;
-  
-  
+
+
 
 }
 
@@ -129,9 +129,10 @@ h2,
   font-size: 100px;
 
 }
-#titulo img{
+
+#titulo img {
   margin-left: 180px;
-  
+
 }
 
 
@@ -154,8 +155,9 @@ h2,
 
 #convenio #carouselExampleIndicators {
   width: 100%;
- 
+
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(100%);
@@ -168,21 +170,22 @@ h2,
   background: var(--cor-terciaria);
   margin: -100px 0 -50px 0;
   width: 100%;
-  
+
 
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(2px);
 }
-#agendamento .card{
-  display:inline-block
+
+#agendamento .card {
+  display: inline-block
 }
 
 #agendamento h2 {
   font-size: 50px;
   color: white;
-  
+
 }
 
 
@@ -198,10 +201,11 @@ h2,
   transition: all 0.3s ease;
   animation: pulsar 1.5s infinite;
   margin-top: 50px;
-  
-  
+
+
 }
-#btn{
+
+#btn {
   font-size: 30px;
 }
 
@@ -276,7 +280,7 @@ footer {
   .corpo {
     margin: 0;
     padding: 0;
-   
+
   }
 
   #navegacao {
@@ -314,12 +318,20 @@ footer {
     padding: 10px;
   }
 
+  #titulo h2,
+  #sobre h2,
+  #convenio h2,
+  #agendamento h2 {
+    font-size: 50px;
+  }
+
+
   #titulo {
     width: 300px;
     border-radius: 100%;
-    
+
   }
-  
+
 
   #titulo h1 {
     font-size: 50px;
@@ -351,19 +363,21 @@ footer {
 
     margin-top: -20px;
     margin-bottom: -40px;
-    
+
   }
-  #agendamento .card{
+
+  #agendamento .card {
     margin: 2px;
     width: 10rem;
   }
 
 
   .btn {
-    
+
     padding: 8px 15px;
   }
-  #btn{
+
+  #btn {
     font-size: 20px;
   }
 
@@ -390,14 +404,15 @@ footer {
 @media (min-width: 769px) {
   body {
     background-color: #f0f8ff;
-   
+
   }
 
   #titulo {
     text-align: center;
     font-size: 3rem;
-    
+
   }
+
   #titulo img {
     width: 345px;
     margin-left: 50px;
@@ -407,11 +422,11 @@ footer {
   #sobre p {
     font-size: 1.2rem;
     line-height: 1.8;
-   
+
   }
 
   .navbar-nav h2 {
     font-size: 1.5rem;
-    
+
   }
 }
