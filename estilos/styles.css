@@ -173,6 +173,9 @@ h2,
 
 
 }
+.card{
+  box-shadow: 4px 4px 8px black;
+}
 
 .card:hover {
   transform: translateY(2px);
@@ -367,7 +370,7 @@ footer {
   }
 
   #agendamento .card {
-    margin: 2px;
+    margin: 3.5px;
     width: 10rem;
   }
 
