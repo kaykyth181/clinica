@@ -2,13 +2,13 @@
     --cor-primaria: #00b7ff;
     --cor-secundaria: rgb(31, 140, 204);
     --cor-terciaria: #015374;
-    --cor-destaque:rgb(18, 99, 22);
+    --cor-destaque: rgb(18, 99, 22);
     --cor-fonte: #333333;
     --cor-fundo: #f4f4f9;
-  }
-  
+}
 
-body { 
+
+body {
     font-family: Arial, sans-serif;
     background-color: var(--cor-fundo);
     color: var(--cor-fonte);
@@ -16,7 +16,8 @@ body {
     padding: 0;
 }
 
-h2,h1{
+h2,
+h1 {
     font-family: "Winky Rough", sans-serif;
 }
 
@@ -25,32 +26,36 @@ header {
     position: relative;
     background-color: var(--cor-primaria);
     color: var(--cor-fundo);
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 10px 20px; 
+    padding: 10px 20px;
 }
 
 #logo img {
     width: 150px;
     transition: transform 0.3s ease;
 }
+
 #logo img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.htexto h1, .htexto p {
-    text-align: right; 
-    
-    
+.htexto h1,
+.htexto p {
+    text-align: right;
+
+
 }
-span{
+
+span {
     color: #f44336;
 }
+
 header p {
     position: relative;
-    
+
 }
 
 
@@ -87,19 +92,59 @@ select {
     box-sizing: border-box;
 }
 
+.form-group {
+    display: flex;
+    gap: 20px;
+}
+
+.form-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group {
+    display: flex;
+    gap: 20px;
+}
+
+.form-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
 button {
     background-color: var(--cor-primaria);
     color: var(--cor-fundo);
-    padding: 10px 15px;
+    padding: 8px 14px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 48%;
-    margin: 5px 1%;
+    width: auto;
+    min-width: 120px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover {
     background-color: var(--cor-destaque);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
 .cancel-btn {
@@ -111,8 +156,36 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    font-family: Arial, sans-serif;
     width: 100%;
     bottom: 0;
+    font-family: Arial, sans-serif;
 }
 
+@media (max-width: 768px) {
+
+
+    .form-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-item {
+        width: 100%;
+        
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+
+    footer {
+
+        width: 390px;
+        border: solid 1px  #333;
+        
+
+    }
+}
