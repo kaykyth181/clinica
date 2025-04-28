@@ -53,6 +53,9 @@ h2,
   
 }
 
+
+
+
 .dropdown-item i {
   padding-right: 10px;
 }
@@ -320,6 +323,11 @@ footer {
     padding: 0;
     height: auto;
 
+  }
+
+  .dropdown-menu{
+    align-items: center;
+    justify-content: center;
   }
 
   #logo img {
