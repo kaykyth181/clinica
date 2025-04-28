@@ -42,6 +42,7 @@ h2,
   padding: 10px 0;
   z-index: 1000;
   position: fixed;
+  height: 130px;
   /* background: linear-gradient(45deg, var(--cor-primaria), var(--cor-terciaria));
  */
 
@@ -49,6 +50,7 @@ h2,
 
 #navegacao h2 {
   font-size: 30px;
+  
 }
 
 .dropdown-item i {
@@ -108,19 +110,45 @@ h2,
 #agendamento h2 {
   font-size: 100px;
 }
+.fundotitulo {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  
+  width: 100%;
+  background-size: cover;
+  padding-bottom: 190px;
+ 
+  
+  /* margin-top: 10px; */
+
+  
+    
+    
+  
+  
+}
+
+.fundotitulo #titulo{
+  width: 500px;
+  
+}
 
 #titulo {
+  
   color: var(--cor-fonte);
-
   background: linear-gradient(to right, var(--cor-primaria), white, red);
-
   border-radius: 100%;
-
   margin-top: 100px;
-
-
+  
+  
+    
+    
+  
 
 }
+
+
 
 #titulo h1 {
 
@@ -294,6 +322,7 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 0;
+    height: auto;
 
   }
 
@@ -331,8 +360,16 @@ footer {
     font-size: 50px;
   }
 
+  .fundotitulo {
 
-  #titulo {
+    margin-top: 0px;
+    
+    
+  }
+  
+
+
+  .fundotitulo #titulo {
     width: 300px;
     border-radius: 100%;
 
