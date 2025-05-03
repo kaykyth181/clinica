@@ -15,6 +15,10 @@ body {
     margin: 0;
     padding: 0;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 h2,
 h1 {
@@ -180,12 +184,4 @@ footer {
         font-size: 16px;
     }
 
-
-    footer {
-
-        width: 390px;
-        border: solid 1px  #333;
-        
-
-    }
 }

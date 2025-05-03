@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!-- bootstrap -->
+
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Special+Gothic+Condensed+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+
+    <link rel="stylesheet" href="estilos/stylesnum.css">
+
+    <script>
+       
+
+        function gerarNumero() {
+            var numero = Math.floor(Math.random() * 1000) + 1; // Gera um número entre 1 e 100
+            document.getElementById("numero").innerText = "Senha: " + numero;
+
+            // Desativa o botão após o primeiro clique
+            document.getElementById("botaoGerar").disabled = true;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo várias cruzes"></a>
+        </div>
+        <div class="htexto">
+            <h1>Cadastro Paciente Hospital <span>Saúde +</span></h1>
+        </div>
+    </header>
+
+    <div class="textocentral">
+        <div class="comp"> <h1>Cadastro completo </h1><i class="bi bi-clipboard2-check-fill"></i> </div>
+        
+        <h2>Paciente:</h2>
+        <h2 id="numero">Senha: 0</h2>
+        <button id="botaoGerar" onclick="gerarNumero()">Gerar senha</button>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2025 Saúde +</p>
+      </footer>
+</body>
+</html>

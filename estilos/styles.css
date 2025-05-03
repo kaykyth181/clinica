@@ -397,7 +397,7 @@ footer {
 
   #carouselExampleIndicators {
     width: 100%;
-    border: solid var(--cor-terciaria);
+    
   }
 
   .carousel-inner .carousel-item a {

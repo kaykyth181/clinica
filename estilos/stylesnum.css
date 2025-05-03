@@ -1,0 +1,166 @@
+:root {
+    --cor-primaria: #00b7ff;
+    --cor-secundaria: rgb(31, 140, 204);
+    --cor-terciaria: #015374;
+    --cor-destaque: rgb(18, 99, 22);
+    --cor-fonte: #333333;
+    --cor-fundo: #f4f4f9;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+
+header {
+    position: relative;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: "Winky Rough", sans-serif;
+}
+
+span {
+    color: red;
+}
+
+#logo img {
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+#logo img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.comp {
+    display: flex;
+}
+
+
+
+.textocentral {
+    text-align: center;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.textocentral i {
+    color: var(--cor-primaria);
+
+}
+
+.textocentral .comp {
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    font-family: Arial, sans-serif;
+    margin-bottom: 0px;
+}
+/* Media Queries para Dispositivos Móveis */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    #logo img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    
+    .htexto h1 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    
+    .textocentral {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+    
+    .textocentral h1 {
+        font-size: 1.8rem;
+    }
+    
+    .textocentral h2 {
+        font-size: 1.5rem;
+    }
+    
+    #numero {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+    
+    #botaoGerar {
+        padding: 12px 24px;
+        font-size: 1.2rem;
+        margin: 15px 0;
+    }
+    
+    footer {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    /* Ajustes para telas muito pequenas */
+    @media (max-width: 480px) {
+        .htexto h1 {
+            font-size: 1.2rem;
+        }
+        
+        .textocentral h1 {
+            font-size: 1.5rem;
+        }
+        
+        .textocentral h2 {
+            font-size: 1.2rem;
+        }
+        
+        #numero {
+            font-size: 1.8rem;
+        }
+    }
+}
