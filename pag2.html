@@ -7,23 +7,197 @@
     <title>Cadastro de Pacientes Saúde +</title>
 
     <!-- fontes -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="estilos/styles2.css">
     <style>
+        :root {
+            --cor-primaria: #00b7ff;
+            --cor-secundaria: rgb(31, 140, 204);
+            --cor-terciaria: #015374;
+            --cor-destaque: rgb(18, 99, 22);
+            --cor-fonte: #333333;
+            --cor-fundo: #f4f4f9;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-fonte);
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        h2, h1 {
+            font-family: "Winky Rough", sans-serif;
+        }
+
+        header {
+            position: relative;
+            background-color: var(--cor-primaria);
+            color: var(--cor-fundo);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        #logo img {
+            width: 150px;
+            transition: transform 0.3s ease;
+        }
+
+        #logo img:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .htexto h1,
+        .htexto p {
+            text-align: right;
+        }
+
+        span {
+            color: #f44336;
+        }
+
+        header p {
+            position: relative;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--cor-fundo);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(1, 175, 255);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+
+        button[type="submit"] {
+            background-color: var(--cor-primaria);
+            color: white;
+        }
+
+        button[type="submit"]:hover {
+            background-color: var(--cor-secundaria);
+        }
+
+        .cancel-btn {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .cancel-btn:hover {
+            background-color: #d32f2f;
+        }
+
+        button[type="button"] {
+            background-color: var(--cor-primaria);
+            color: white;
+        }
+
+        button[type="button"]:hover {
+            background-color: var(--cor-secundaria);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        footer {
+            background-color: var(--cor-fonte);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .form-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .form-item {
+                width: 100%;
+            }
+
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            button {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
     </style>
 </head>
 
@@ -46,7 +220,6 @@
             <div class="form-item"><label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" required>
             </div>
-
 
             <div class="form-group">
                 <div class="form-item">
@@ -100,21 +273,18 @@
                 <option value="outro">Outro</option>
             </select>
 
-
-
-
-
             <!-- Observações -->
             <label for="observacoes">Observações:</label>
             <textarea id="observacoes" name="observacoes" rows="4"
                 placeholder="Alguma observação sobre o paciente?"></textarea>
 
-
-
             <!-- Botões -->
-            <button type="submit">Cadastrar Paciente</button>
-            <button type="reset" class="cancel-btn">Limpar Formulário</button>
-            <button type="button" onclick="window.history.back()">Voltar</button>
+            <div class="button-group">
+                <button type="submit">Cadastrar Paciente</button>
+                <button type="reset" class="cancel-btn">Limpar Formulário</button>
+                <button type="button" onclick="window.history.back()">Voltar</button>
+                <button type="button"><a href="ficha.html">Ficha</a></button>
+            </div>
         </form>
     </main>
 
@@ -123,5 +293,4 @@
     </footer>
 
 </body>
-
 </html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão do Paciente - Saúde +</title>
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <style>
+        :root {
+            --cor-primaria: #00b7ff;
+            --cor-secundaria: rgb(31, 140, 204);
+            --cor-terciaria: #015374;
+            --cor-destaque: rgb(18, 99, 22);
+            --cor-fonte: #333333;
+            --cor-fundo: #f4f4f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--cor-fundo);
+            color: var(--cor-fonte);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--cor-primaria);
+            color: white;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #logo {
+            display: flex;
+            align-items: center;
+        }
+
+        #logo img {
+            height: 100px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .header-content {
+            flex: 1;
+            text-align: left;
+        }
+
+        h1 {
+            font-family: 'Special Gothic Condensed One', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 span {
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .patient-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid var(--cor-primaria);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .card-header h2 {
+            color: var(--cor-terciaria);
+            font-family: 'Special Gothic Condensed One', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .card-logo {
+            height: 50px;
+            width: auto;
+        }
+
+        .patient-info {
+            margin-bottom: 1.5rem;
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-label {
+            font-weight: bold;
+            width: 150px;
+            color: var(--cor-terciaria);
+        }
+
+        .info-value {
+            flex: 1;
+        }
+
+        .service-badge {
+            background-color: var(--cor-destaque);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .ticket-section {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px dashed #ccc;
+        }
+
+        .ticket-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--cor-destaque);
+            margin: 1rem 0;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .primary-btn {
+            background-color: var(--cor-primaria);
+            color: white;
+        }
+
+        .primary-btn:hover {
+            background-color: var(--cor-secundaria);
+        }
+
+        .secondary-btn {
+            background-color: var(--cor-primaria); /* Alterado para cor primária */
+            color: white;
+        }
+
+        .secondary-btn:hover {
+            background-color: var(--cor-secundaria);
+        }
+
+        .print-btn {
+            background-color: var(--cor-destaque);
+            color: white;
+        }
+
+        .print-btn:hover {
+            background-color: rgb(14, 80, 18);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--cor-fonte);
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media print {
+            header, footer, .button-group {
+                display: none;
+            }
+
+            .patient-card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: row-reverse; /* Logo à direita e texto à esquerda */
+                justify-content: space-between;
+                gap: 1rem;
+                text-align: left;
+                padding: 1rem;
+            }
+            
+            #logo img {
+                height: 80px;
+                width: auto; /* Garante que não vai esticar */
+            }
+            
+            .header-content {
+                text-align: left;
+                flex: 1;
+            }
+            
+            h1 {
+                font-size: 1.4rem;
+            }
+            
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            button {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Cartão do Paciente Saúde +</h1>
+            <p>Confira abaixo as informações do seu cadastro e sua senha para atendimento.</p>
+        </div>
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo varias cruz"></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="card-container">
+            <div class="patient-card">
+                <div class="card-header">
+                    <h2>Paciente Saúde +</h2>
+                    <img src="img/logo.png" alt="logo Saúde +" class="card-logo">
+                </div>
+
+                <div class="patient-info">
+                    <div class="info-row">
+                        <div class="info-label">Nome Completo:</div>
+                        <div class="info-value">Maria da Silva Oliveira</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Idade:</div>
+                        <div class="info-value">32 anos</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Sexo:</div>
+                        <div class="info-value">Feminino</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Endereço:</div>
+                        <div class="info-value">Rua das Flores, 123 - Centro</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">CEP:</div>
+                        <div class="info-value">12345-678</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Telefone:</div>
+                        <div class="info-value">(11) 98765-4321</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">E-mail:</div>
+                        <div class="info-value">maria.silva@email.com</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Serviço:</div>
+                        <div class="info-value">
+                            Consulta Médica
+                            <span class="service-badge">AGENDADO</span>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Observações:</div>
+                        <div class="info-value">Paciente com histórico de alergia a penicilina.</div>
+                    </div>
+                </div>
+
+                <div class="ticket-section">
+                    <h3>Sua senha para atendimento:</h3>
+                    <div class="ticket-number" id="ticketNumber">---</div>
+                    <p>Apresente esta senha na recepção do hospital.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="primary-btn" id="generateTicket">Gerar Senha</button>
+            <button class="print-btn" id="printCard">Imprimir Cartão</button>
+            <button class="secondary-btn" onclick="window.history.back()">Voltar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saúde +</p>
+    </footer>
+
+    <script>
+        document.getElementById('generateTicket').addEventListener('click', function() {
+            const randomNumber = Math.floor(Math.random() * 1000) + 1;
+            document.getElementById('ticketNumber').textContent = randomNumber.toString().padStart(3, '0');
+            
+            // Altera o botão após gerar a senha
+            this.textContent = 'Senha Gerada';
+            this.style.backgroundColor = 'var(--cor-destaque)';
+            this.disabled = true;
+        });
+
+        document.getElementById('printCard').addEventListener('click', function() {
+            window.print();
+        });
+    </script>
+
+</body>
+</html>
